@@ -1,0 +1,479 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+ 
+}
+/*general style*/
+.sections
+{
+    margin-bottom: 50px;
+}
+/*end general style*/
+/*start top nav*/
+.top-nav
+{
+    background-image: linear-gradient(rgba(13, 71, 161,0.6),rgba(30, 136, 229,0.6));
+    height: auto;
+    padding-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.top-nav .top-nav-content
+{
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav .top-nav-content .top-icon i
+{
+    transition: all 0.8s ease-in-out;
+}
+.top-nav .top-nav-content .top-icon i::after
+{
+content: "|";
+padding-left: 7px;
+}
+.top-nav .top-nav-content .top-icon i:hover
+{
+    font-size: 23px;
+    background-color: #fff;
+    color: rgba(13, 71, 161,1.0);
+    width: 20px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    padding: 2px;
+}
+@media (max-width:700px)
+{
+    .top-nav
+    {
+        display: none;
+    }
+}
+/*end top nav*/
+
+/*start navbar*/
+.main-navbar 
+{
+    background-image: linear-gradient(rgba(25, 118, 210,0.3),rgba(33, 150, 243,0.3));
+    padding-top: 6px;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.main-navbar .nav-icon
+{
+    position: absolute;
+    right: 58px;
+    top: 9px;
+    font-size: 27px;
+}
+.main-navbar .nav-icon i
+{
+    cursor: pointer;
+    z-index: 333;
+    position: absolute;
+}
+.main-navbar .nav-logo
+{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.main-navbar .nav-links
+{
+    display: flex;
+    justify-content: space-around;
+}
+.main-navbar .nav-links
+{
+    margin-top: 9px;
+}
+.main-navbar .nav-links .link a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+.scroll-nav
+{
+    top: 0;
+    background-color: #0D47A1;
+}
+.top-hide
+{
+    display: none;
+}
+@media (max-width:700px)
+{
+    .main-navbar .nav-links
+    {
+        display: none;
+    }
+    .main-navbar .nav-links .link 
+    {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .main-navbar .nav-links .link a
+    {
+        text-transform: capitalize;
+    }
+}
+@media (min-width:700px)
+{
+    .main-navbar .nav-icon
+    {
+        display: none;
+    }
+}
+/*end navbar*/
+
+/*start header*/
+.header
+{
+    background-image: url("../img/carousel-3.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header .header-overlay
+{
+    background-color: rgb(0 0 0 / 62%);;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.header .header-overlay .header-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.header .header-overlay .header-content .head-con-title
+{
+    text-transform: capitalize;
+    font-size: 52px;
+}
+.header .header-overlay .header-content .head-con-desc
+{
+    font-size: 22px;
+}
+.header .header-overlay .header-content .header-button
+{
+    background: 0;
+    border: 2px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+.header .header-overlay .header-content .header-button:hover
+{
+    background-color: #fff;
+    border: 0;
+    color: rgba(13, 71, 161,1.0);
+}
+@media (max-width:575px)
+{
+    .header .header-overlay .header-content .head-con-title {
+      
+        font-size: 33px;
+    }
+    .header .header-overlay .header-content .header-button {
+        margin-bottom: 14px;
+        width: 150px;
+    }
+}
+/*end header*/
+
+/*start our feature*/
+.our-feature .feature
+{
+    background-color: #fff;
+    height: 135px;
+    padding: 23px;
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+}
+.our-feature .feature:hover
+{
+    border: 2px solid #999;
+}
+.our-feature .feature img
+{
+    margin-bottom: 7px;
+}
+.our-feature .feature p
+{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/*end our feature*/
+
+/*about us*/
+.about-us
+{
+    background-color: #fff;
+    padding: 15px;
+    height: 638px;
+}
+.about-us .about-image
+{
+    position: relative;
+}
+.about-us .about-image .img-two
+{
+    position: absolute;
+    right: 0;
+    bottom: -153px;
+}
+.about-us .about-left-section
+{
+    padding-top: 97px;
+}
+.about-us .about-left-section h2
+{
+    text-transform: capitalize;
+    font-size: 48px;
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+.about-us .about-left-section p
+{
+    color: #999;
+    text-transform: capitalize;
+}
+.about-us .about-left-section .about-button
+{
+    background :0;
+    border:2px solid #000;
+}
+.about-us .about-left-section .about-button:hover
+{
+    background-color: #1976D2;
+    border: 0;
+    color:#fff;
+    font-weight: bold;
+}
+@media (max-width:700px)
+{
+    .about-us
+    {
+        height: 1200px;
+    }
+   
+    .about-us .about-left-section {
+        padding-top: 170px;
+    }
+    .about-us .about-left-section h2 {
+        font-size: 29px;
+    }
+}
+/*end about us*/
+
+/*start our services*/
+.services .services-title
+{
+    font-size: 48px;
+    color: #0D47A1;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.services .serv
+{
+    border: 2px solid #999;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.services .serv .serv-icon
+{
+    margin-bottom: 15px;
+}
+.services .serv .serv-icon h4
+{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.services .serv .serv-icon p
+{
+    color: #7b7878;
+}
+@media (max-width:575px)
+{
+    .services .services-title {
+        font-size: 32px;
+    }
+}
+/*end our services*/
+
+/*start why choose us*/
+.choose .choose-info
+{
+    margin-top: 184px;
+}
+.choose .choose-info .info-title
+{
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.choose .choose-info .info-desc
+{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #8c8c8c;
+}
+.choose .choose-info .info-counter
+{
+    margin-bottom: 26px;
+}
+.choose .choose-info .info-counter .time
+{
+    font-size: 30px;
+    font-weight: bold;
+    color:#0D47A1 ;
+}
+.choose .choose-info .info-counter h5
+{
+    padding-left: 38px;
+    text-transform: capitalize;
+}
+@media (max-width:575px)
+{
+    .choose .choose-info .info-counter {
+        text-align: center;
+    }
+}
+/*end why choose us*/
+
+/*start our team*/
+.our-team
+{
+    position: relative;
+}
+.our-team .team-title
+{
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #0D47A1;
+    margin-bottom: 30px;
+}
+.our-team .team-memeber
+{
+    background-color: #cccaca;
+    position: relative;
+    bottom: 58px;
+}
+.our-team .team-memeber .member-icons
+{
+    display: none;
+}
+.our-member-hover
+{
+    bottom:90px !important;
+}
+@media (max-width:575px)
+{
+    .our-team .team-title {
+        font-size: 28px;
+    }
+}
+/*end our team*/
+
+/*start our review*/
+.review
+{
+    margin-top: 50px;
+}
+.review .reviw-title
+{
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #0D47A1;
+    margin-bottom: 30px;
+}
+.review .review-img
+{
+    width: 80px !important;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.review .review-item p
+{
+    text-transform: capitalize;
+    color: #676565;
+}
+.review .owl-nav .owl-prev,
+.review .owl-nav .owl-next
+{
+    width: 100px;
+    background-color: #999;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+@media (max-width:575px)
+{
+    .review .reviw-title {
+        font-size: 30px;
+    }    
+}
+/*end our review*/
+
+/*start blogs*/
+
+.blogs .carousel-inner .active .blogs-description
+{
+    position: relative;
+    z-index: 9999;
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    margin-top: -102px;
+    border-radius: 15px;
+}
+
+.blogs .carousel-inner .carousel-item .blogs-description .desc-title
+{
+    text-transform: capitalize;
+    color: #0D47A1;
+}
+.blogs .carousel-inner .carousel-item .blogs-description i
+{
+    color: #0D47A1;
+}
+.blogs .carousel-inner .carousel-item .blogs-description p
+{
+    text-transform: capitalize;
+    color: #888;
+    margin-top: 10px;
+}
+.blogs .carousel-control-prev-icon,
+.blogs .carousel-control-nextn-icon
+{
+    
+    background-color: #0D47A1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+/*end blogs*/
